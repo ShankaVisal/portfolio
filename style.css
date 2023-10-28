@@ -361,21 +361,36 @@ section .title::after{
     left: 0;
     top: 0;
     background: crimson;
+    animation: fill-progress 10s ease-in-out forwards;
+}
+@keyframes fill-progress {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: var(--progress-width);;
+    }
 }
 .skills-content .right .html::before{
     width: 90%;
+    --progress-width: 90%;
+    
 }
 .skills-content .right .css::before{
     width: 60%;
+    --progress-width: 60%;
 }
 .skills-content .right .js::before{
     width: 80%;
+    --progress-width: 80%;
 }
 .skills-content .right .php::before{
     width: 50%;
+    --progress-width: 50%;
 }
 .skills-content .right .mysql::before{
     width: 70%;
+    --progress-width: 70%;
 }
 
 /* teams section styling */
