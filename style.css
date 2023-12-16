@@ -16,14 +16,14 @@ html{
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: crimson;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #555;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #222222;
 }
 
 /* all similar content styling codes */
@@ -185,8 +185,72 @@ section .title::after{
 }
 .home .home-content .text-2{
     font-size: 75px;
-    font-weight: 600;
+    font-weight:700;
+    width:fit-content;
+    display: flex;
+    align-items: flex-start;
+    animation: changeColor 5s infinite linear;
     margin-left: -3px;
+}
+
+@keyframes changeColor {
+    0% {
+        color: crimson;
+    }
+    10% {
+        color: orange;
+    }
+    30% {
+        color: yellow;
+    }
+    50% {
+        color: green;
+    }
+    70% {
+        color: blue;
+    }
+    100% {
+        color: crimson;
+    }
+}
+.jello:hover{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color:  crimson;
+    -webkit-animation: jello-vertical 0.9s both;
+	        animation: jello-vertical 0.9s both;
+}
+
+@-webkit-keyframes jello-vertical {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(0.85, 1.15, 1);
+              transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
 }
 .home .home-content .text-3{
     font-size: 40px;
@@ -377,25 +441,67 @@ section .title::after{
     
 }
 .skills-content .right .css::before{
-    width: 60%;
-    --progress-width: 60%;
+    width: 75%;
+    --progress-width: 75%;
 }
 .skills-content .right .js::before{
-    width: 80%;
-    --progress-width: 80%;
+    width: 70%;
+    --progress-width: 70%;
 }
 .skills-content .right .php::before{
     width: 50%;
     --progress-width: 50%;
 }
-.skills-content .right .mysql::before{
+.skills-content .right .flutter::before{
+    width: 85%;
+    --progress-width: 85%;
+}
+.skills-content .right .mongodB::before{
     width: 70%;
     --progress-width: 70%;
+}
+.skills-content .right .dart::before{
+    width: 70%;
+    --progress-width: 70%;
+}
+.skills-content .right .firebase::before{
+    width: 75%;
+    --progress-width: 75%;
+}
+.skills-content .right .c::before{
+    width: 60%;
+    --progress-width: 60%;
+}
+.skills-content .right .java::before{
+    width: 65;
+    --progress-width: 65%;
+}
+.skills-content .right .python::before{
+    width: 60%;
+    --progress-width: 60%;
+}
+.skills-content .right .xd::before{
+    width: 80%;
+    --progress-width: 80%;
+}
+.skills-content .right .figma::before{
+    width: 80%;
+    --progress-width: 80%;
+}
+.click-me {
+    color: blue; 
+    text-decoration: none; 
+    font-size: 16px; 
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out; 
+}
+.click-me:hover {
+    color: rgb(204, 255, 0); 
+    font-size: 20px;
 }
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "Certificates I got";
 }
 .teams .carousel .card{
     background: #222;
@@ -424,11 +530,11 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .teams .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
+    height: 250px;
+    width: 300px;
+    object-fit: fill;
+    border-radius: 10%;
+    border: 3px solid crimson;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
@@ -693,3 +799,8 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+
+
+
+ 
