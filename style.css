@@ -278,6 +278,7 @@ section .title::after{
 }
 
 /* about section styling */
+
 .about .title::after{
     content: "who I am";
 }
@@ -910,7 +911,14 @@ footer span a:hover{
     }
 }
 
+.about, .skills, .teams, .projects, .competitions, .contact{
+    opacity: 0;
+    transition: 500ms ease-in;
+}
 
+.aboutOn, .skillsOn, .teamsOn, .projectsOn, .competitionsOn, .contactOn{
+    opacity: 1;
+}
 
 
  
