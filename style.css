@@ -609,7 +609,7 @@ section .title::after{
 
 /* competions section styling */
 .competitions .title::after{
-    content: "Competitions I Participate";
+    content: "Which I win";
 }
 .competitions .card{
     background: #d0d0d0;
