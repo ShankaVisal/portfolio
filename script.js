@@ -71,3 +71,36 @@ $(document).ready(function(){
         }
     });
 });
+
+const aboutsec = document.querySelector('.about');
+const skillsec = document.querySelector('.skills');
+const projectsec = document.querySelector('.projects');
+const certificationssec = document.querySelector('.teams');
+const competitionssec = document.querySelector('.competitions');
+const contactsec = document.querySelector('.contact');
+
+
+const options = {
+    threshold:0.1
+};
+const observer = new IntersectionObserver(function(entries){
+    entries.forEach(entry => {
+        console.log(entry);
+        const intersecting = entry.isIntersecting;
+        if(intersecting){
+            entry.target.classList.add('aboutOn');
+            entry.target.classList.add('skillsOn');
+            entry.target.classList.add('projectsOn');
+            entry.target.classList.add('teamsOn');
+            entry.target.classList.add('competitionsOn');
+            entry.target.classList.add('contactOn');
+        }
+    })
+}, options);
+
+observer.observe(aboutsec);
+observer.observe(skillsec);
+observer.observe(projectsec);
+observer.observe(certificationssec);
+observer.observe(competitionssec);
+observer.observe(contactsec);

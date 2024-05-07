@@ -278,6 +278,7 @@ section .title::after{
 }
 
 /* about section styling */
+
 .about .title::after{
     content: "who I am";
 }
@@ -366,6 +367,42 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+
+
+/* Adjust the gap between rows in the grid */
+.work__container {
+    row-gap: 2rem;
+}
+
+/* Set a maximum width for the grid container */
+.bd-grid {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column width as needed */
+    gap: 20px; /* Adjust the gap between grid items */
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
+
+/* Style each grid item */
+.work__img {
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    border-radius: .5rem;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+/* Add a hover effect to scale the image */
+.work__img:hover {
+    transform: scale(1.1);
+}
+.work__img img {
+    width: 100%; /* Ensure the image takes the full width of the container */
+    height: auto; /* Allow the height to adjust based on the aspect ratio */
+    display: block; /* Remove extra spacing below the image */
+}
+
 
 /* skills section styling */
 
@@ -568,6 +605,73 @@ section .title::after{
 .owl-dot:hover{
     background: crimson!important;
 }
+
+
+/* competions section styling */
+.competitions .title::after{
+    content: "Which I win";
+}
+.competitions .card{
+    background: #d0d0d0;
+    height: 500px;
+    width: 300px;
+    border-radius: 6px;
+    padding: 15px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.competitions .card:hover{
+    background: crimson;
+}
+.competitions .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.competitions .card:hover .box{
+    transform: scale(1.05);
+}
+.competitions .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    /* margin: 10px 0 7px 0; */
+    font-family: 'Poppins', sans-serif;
+}
+.competitions .card p{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.competitions .card img{
+    height: 200px;
+    width: 250px;
+    object-fit: fill;
+    border-radius: 2%;
+    border: 1px solid crimson;
+    transition: all 0.3s ease;
+}
+.competitions .card .ver img{
+    height: 300px;
+    width: 200px;
+    object-fit: fill;
+    border-radius: 2%;
+    border: 1px solid crimson;
+    transition: all 0.3s ease;
+}
+.competitions .card:hover img{
+    border-color: #fff;
+}
+
+.competitions .work__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+
 
 /* contact section styling */
 .contact .title::after{
@@ -807,7 +911,14 @@ footer span a:hover{
     }
 }
 
+.about, .skills, .teams, .projects, .competitions, .contact{
+    opacity: 0;
+    transition: 500ms ease-in;
+}
 
+.aboutOn, .skillsOn, .teamsOn, .projectsOn, .competitionsOn, .contactOn{
+    opacity: 1;
+}
 
 
  
