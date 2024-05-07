@@ -85,7 +85,7 @@ const options = {
 };
 const observer = new IntersectionObserver(function(entries){
     entries.forEach(entry => {
-        console.log(entry);
+        console.log(entry.target);
         const intersecting = entry.isIntersecting;
         if(intersecting){
             entry.target.classList.add('aboutOn');
