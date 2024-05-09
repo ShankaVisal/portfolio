@@ -88,7 +88,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    background: rgb(0, 0, 0);
 }
 .navbar .max-width{
     display: flex;
@@ -165,7 +165,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpeg") no-repeat center;
+    background: url("images/banner.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -556,7 +556,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background: crimson;
+    background: rgb(67, 67, 67);
 }
 .teams .carousel .card .box{
     display: flex;
@@ -578,7 +578,7 @@ section .title::after{
     width: 300px;
     object-fit: fill;
     border-radius: 10%;
-    border: 3px solid crimson;
+    /* border: 3px solid crimson; */
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
@@ -622,7 +622,9 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .competitions .card:hover{
-    background: crimson;
+    background: rgb(67, 67, 67);
+    transform: scale(1.05);
+    color: #eeeeee;
 }
 .competitions .card .box{
     display: flex;
@@ -633,7 +635,7 @@ section .title::after{
 }
 
 .competitions .card:hover .box{
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 }
 .competitions .card .text{
     font-size: 25px;
@@ -650,7 +652,7 @@ section .title::after{
     width: 250px;
     object-fit: fill;
     border-radius: 2%;
-    border: 1px solid crimson;
+    /* border: 1px solid crimson; */
     transition: all 0.3s ease;
 }
 .competitions .card .ver img{
@@ -658,7 +660,7 @@ section .title::after{
     width: 200px;
     object-fit: fill;
     border-radius: 2%;
-    border: 1px solid crimson;
+    /* border: 1px solid crimson; */
     transition: all 0.3s ease;
 }
 .competitions .card:hover img{
