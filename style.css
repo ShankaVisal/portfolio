@@ -473,36 +473,40 @@ section .title::after{
     }
 }
 .skills-content .right .html::before{
-    width: 90%;
-    --progress-width: 90%;
+    width: 95;
+    --progress-width: 95%;
 }
 .skills-content .right .css::before{
-    width: 75%;
-    --progress-width: 75%;
+    width: 89%;
+    --progress-width: 89%;
 }
 .skills-content .right .js::before{
-    width: 70%;
-    --progress-width: 70%;
+    width: 88%;
+    --progress-width: 88%;
 }
 .skills-content .right .php::before{
-    width: 50%;
-    --progress-width: 50%;
+    width: 86%;
+    --progress-width: 86%;
 }
 .skills-content .right .flutter::before{
     width: 85%;
     --progress-width: 85%;
 }
 .skills-content .right .mongodB::before{
-    width: 70%;
-    --progress-width: 70%;
+    width: 84%;
+    --progress-width: 84%;
+}
+.skills-content .right .nodejs::before{
+    width: 80%;
+    --progress-width: 80%;
 }
 .skills-content .right .dart::before{
-    width: 70%;
-    --progress-width: 70%;
+    width: 85%;
+    --progress-width: 85%;
 }
 .skills-content .right .firebase::before{
-    width: 75%;
-    --progress-width: 75%;
+    width: 85%;
+    --progress-width: 85%;
 }
 .skills-content .right .c::before{
     width: 60%;
@@ -525,12 +529,12 @@ section .title::after{
     --progress-width: 80%;
 }
 .skills-content .right .angular::before{
-    width: 40%;
-    --progress-width: 40%;
+    width: 50%;
+    --progress-width: 50%;
 }
 .skills-content .right .net::before{
-    width: 30%;
-    --progress-width: 30%;
+    width: 40%;
+    --progress-width: 40%;
 }
 .click-me {
     color: blue; 
