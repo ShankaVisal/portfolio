@@ -685,12 +685,7 @@ section .title::after{
 
 /* Gallery section styling */
 .gallery .title::after{
-    content: "get in touch";
-}
-.product-showcase {
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    content: "my gallery";
 }
 
 .bento-box {
@@ -750,7 +745,6 @@ footer {
     width: 100%;
 }
 
-/* Overlay Styles */
 #overlay {
     display: none;
     position: fixed;
@@ -784,7 +778,6 @@ footer {
 }
 
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .bento-box {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
