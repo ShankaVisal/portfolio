@@ -549,7 +549,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "Certificates I got";
+    content: "10+ Certificates I got";
 }
 .teams .carousel .card{
     background: #222;
