@@ -623,7 +623,7 @@ section .title::after{
 }
 .competitions .card{
     background: #d0d0d0;
-    height: 500px;
+    height: 400px;
     width: 300px;
     border-radius: 6px;
     padding: 15px 35px;
@@ -648,7 +648,7 @@ section .title::after{
     /* transform: scale(1.05); */
 }
 .competitions .card .text{
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 500;
     /* margin: 10px 0 7px 0; */
     font-family: 'Poppins', sans-serif;
