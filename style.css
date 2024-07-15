@@ -399,7 +399,8 @@ section .title::after{
 }
 .work__img img {
     width: 100%; /* Ensure the image takes the full width of the container */
-    height: auto; /* Allow the height to adjust based on the aspect ratio */
+    height: 100%; /* Allow the height to adjust based on the aspect ratio */
+    object-fit: cover;
     display: block; /* Remove extra spacing below the image */
 }
 
